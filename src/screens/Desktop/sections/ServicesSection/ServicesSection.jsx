@@ -1,31 +1,31 @@
-import React, { useState } from "react";
-import { ChevronRight, Link2, Zap, Brain, Database, FileText, Code2 } from "lucide-react";
+import { Brain, ChevronRight, FileText, LayoutDashboard, Wrench, Zap } from "lucide-react";
+import { useState } from "react";
 
 const expertiseData = [
     {
-        id: "integration",
-        title: "Software Integration",
-        icon: Link2,
-        heading: "Unify Your Software",
-        description: "Sync your software to eliminate silos and boost productivity. Seamless integrations deliver real-time data flow, streamlined workflows, and scalable solutions, freeing you from manual workarounds and enhancing decision-making.",
+        id: "automation",
+        title: "Automation & Process Workflows",
+        icon: Zap,
+        heading: "Automate Your Operations",
+        description: "Transform manual, repetitive tasks into seamless automated workflows. We design and implement end-to-end process automation that reduces human error, accelerates operations, and frees your team to focus on strategic initiatives.",
         features: [
-            "Real-time data synchronization",
-            "API development & management",
-            "Legacy system modernization",
-            "Cross-platform connectivity"
+            "End-to-end workflow automation",
+            "Multi-system integration & triggers",
+            "Automated notifications & alerts",
+            "Process optimization & monitoring"
         ]
     },
     {
-        id: "automation",
-        title: "Process Automation",
-        icon: Zap,
-        heading: "Banish Busywork",
-        description: "Automate repetitive tasks to save time and reduce errors. Scalable workflows across all of your tools, streamlining operations and empowering your team to focus on high-value work with effortless efficiency.",
+        id: "document",
+        title: "Document Automation",
+        icon: FileText,
+        heading: "Streamline Your Documents",
+        description: "Eliminate manual document handling with intelligent automation. From automated generation to smart data extraction, we help you process documents faster, reduce errors, and maintain consistency across all your business communications.",
         features: [
-            "Workflow automation design",
-            "Task scheduling & triggers",
-            "Error handling & recovery",
-            "Process monitoring dashboards"
+            "Automated document generation",
+            "Intelligent data extraction (OCR)",
+            "Template management & versioning",
+            "Digital signature integration"
         ]
     },
     {
@@ -33,59 +33,46 @@ const expertiseData = [
         title: "AI Integration",
         icon: Brain,
         heading: "Harness AI Power",
-        description: "Embed AI into your workflows for sharper decisions and exponential output. Systematic AI integration delivers consistent, scalable results, enhancing productivity whilst centralising governance and optimisation efforts.",
+        description: "Embed cutting-edge AI capabilities directly into your existing workflows. From intelligent chatbots to predictive analytics, we help you leverage AI to make smarter decisions, enhance customer experiences, and unlock new efficiencies.",
         features: [
             "Custom AI model deployment",
-            "Intelligent document processing",
-            "Predictive analytics",
-            "Natural language automation"
+            "Intelligent chatbots & assistants",
+            "Predictive analytics & insights",
+            "Natural language processing"
         ]
     },
     {
-        id: "data",
-        title: "Data Strategy",
-        icon: Database,
-        heading: "Master Your Data",
-        description: "Centralise, clean and enrich your data to fuel your people, automations and AI agent force. Scalable data strategies ensure secure, real-time access, integrating with your systems to drive smarter decisions.",
+        id: "tools",
+        title: "Custom Internal Tools",
+        icon: Wrench,
+        heading: "Build Tools That Fit",
+        description: "Stop struggling with spreadsheets and generic software. We build custom internal tools tailored to your exact business needs, empowering your team with purpose-built applications that drive productivity and streamline operations.",
         features: [
-            "Data warehouse design",
-            "ETL pipeline development",
-            "Data quality management",
-            "Business intelligence setup"
+            "Bespoke internal applications",
+            "Custom workflow builders",
+            "Team productivity tools",
+            "Data management systems"
         ]
     },
     {
-        id: "document",
-        title: "Document Automation",
-        icon: FileText,
-        heading: "Streamline Your Docs",
-        description: "Automate document creation and extraction. Generate custom docs and extract data from scans, cutting admin time, boosting accuracy, and integrating doc flows with your systems for seamless output.",
+        id: "dashboards",
+        title: "Custom Dashboards & Portals",
+        icon: LayoutDashboard,
+        heading: "Visualize & Control",
+        description: "Gain complete visibility into your business with custom dashboards and client portals. We create intuitive, data-rich interfaces that centralize information, improve decision-making, and enhance collaboration with stakeholders.",
         features: [
-            "Automated document generation",
-            "OCR & data extraction",
-            "Template management",
-            "Digital signature integration"
-        ]
-    },
-    {
-        id: "nocode",
-        title: "Nocode Development",
-        icon: Code2,
-        heading: "Build Custom Apps Faster",
-        description: "Create custom tools without coding, replacing spreadsheets with scalable apps. Rapid, flexible and scalable solutions integrate with your tech stack, streamline processes and accelerating productivity with ease.",
-        features: [
-            "Custom app development",
-            "Internal tool building",
-            "Database applications",
-            "Workflow portals"
+            "Real-time analytics dashboards",
+            "Client & partner portals",
+            "Executive reporting interfaces",
+            "KPI tracking & visualization"
         ]
     }
 ];
 
 export const ServicesSection = () => {
-    const [activeTab, setActiveTab] = useState("integration");
+    const [activeTab, setActiveTab] = useState("automation");
     const activeExpertise = expertiseData.find(e => e.id === activeTab);
-    const ActiveIcon = activeExpertise?.icon || Link2;
+    const ActiveIcon = activeExpertise?.icon || Zap;
 
     return (
         <section id="services" className="py-20 px-4 bg-gray-50">
@@ -110,8 +97,8 @@ export const ServicesSection = () => {
                                 key={expertise.id}
                                 onClick={() => setActiveTab(expertise.id)}
                                 className={`inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium text-sm transition-all duration-200 ${activeTab === expertise.id
-                                        ? 'bg-navy-900 text-white shadow-lg'
-                                        : 'bg-white text-gray-700 border border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                                    ? 'bg-navy-900 text-white shadow-lg'
+                                    : 'bg-white text-gray-700 border border-gray-200 hover:border-gray-300 hover:bg-gray-50'
                                     }`}
                             >
                                 <Icon className="w-4 h-4" />

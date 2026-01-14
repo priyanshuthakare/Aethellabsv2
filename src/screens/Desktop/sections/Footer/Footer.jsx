@@ -1,5 +1,4 @@
-import React from "react";
-import { ChevronRight, Twitter, Linkedin, Github } from "lucide-react";
+import { Linkedin, Twitter } from "lucide-react";
 
 const footerLinks = {
     expertise: [
@@ -35,7 +34,7 @@ const footerLinks = {
 const socialLinks = [
     { icon: Twitter, href: "https://twitter.com" },
     { icon: Linkedin, href: "https://linkedin.com" },
-    { icon: Github, href: "https://github.com" },
+    { icon: Instagram, href: "https://github.com" },
 ];
 
 export const Footer = () => {
@@ -64,7 +63,7 @@ export const Footer = () => {
                                 alt="Aethel Labs"
                                 className="h-8 w-auto object-contain brightness-0 invert"
                             />
-                            <span className="font-bold text-white text-lg">Aethel Labs</span>
+
                         </div>
                         <p className="text-slate-400 text-sm mb-4">
                             AI & Automation, Made Easy.

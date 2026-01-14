@@ -1,51 +1,72 @@
-import React from "react";
-import { Zap, MessageCircle, Target, Sparkles, Eye, HeadphonesIcon } from "lucide-react";
+import {
+    ArrowRight,
+    Crosshair,
+    Layers,
+    MessageSquareText,
+    Rocket,
+    ShieldCheck,
+    Users
+} from "lucide-react";
 
+/**
+ * @intent Why Work With Us section showcasing Aethel Labs' unique value propositions
+ * Features: Consistent brand theming, premium icons, enhanced content, hover animations
+ */
 const benefits = [
     {
-        icon: Zap,
-        title: "Fast",
-        description: "We deliver solutions swiftly and iteratively to slash your time to value and get you moving faster."
+        icon: Rocket,
+        title: "Lightning Fast",
+        highlight: "2x faster delivery",
+        description: "We don't believe in endless timelines. Our agile approach delivers working solutions in weeks, not months – so you see ROI faster."
     },
     {
-        icon: MessageCircle,
-        title: "Friendly",
-        description: "Our team brings a collaborative, approachable style, making complex feel simple and stress-free."
+        icon: Users,
+        title: "Genuinely Friendly",
+        highlight: "Human-first approach",
+        description: "No corporate jargon or cold handoffs. You'll work directly with senior experts who genuinely care about your success."
     },
     {
-        icon: Target,
-        title: "Focused",
-        description: "We won't over engineer a solution and overwhelm you with complexity. We stay on point with you in control."
+        icon: Crosshair,
+        title: "Laser Focused",
+        highlight: "No scope creep",
+        description: "We solve your actual problems, not imaginary ones. Every solution is precisely scoped to deliver maximum impact."
     },
     {
-        icon: Sparkles,
-        title: "Flexible",
-        description: "From start to finish, we adapt to your goals, timeline, and constraints with dynamism that maximises your agility."
+        icon: Layers,
+        title: "Highly Flexible",
+        highlight: "Adapts to you",
+        description: "Your business changes – so should your technology. We build modular, scalable solutions that evolve with your needs."
     },
     {
-        icon: Eye,
-        title: "Clear",
-        description: "We've eliminated jargon and explain everything simply and transparently so you're always in the loop."
+        icon: MessageSquareText,
+        title: "Crystal Clear",
+        highlight: "Zero confusion",
+        description: "Expect plain English, not tech-speak. We explain everything transparently so you're always in control."
     },
     {
-        icon: HeadphonesIcon,
-        title: "Committed",
-        description: "We don't disappear after deployment. We can – and would love to – monitor, support and optimise your technology long-term."
+        icon: ShieldCheck,
+        title: "Fully Committed",
+        highlight: "Long-term partner",
+        description: "We're not a hit-and-run agency. We stay by your side to optimize, maintain, and scale your automation ecosystem."
     }
 ];
 
 export const WhyWorkWithUsSection = () => {
     return (
-        <section id="why-us" className="py-20 px-4 bg-white">
-            <div className="w-full max-w-[1200px] mx-auto">
-                {/* Heading */}
+        <section id="why-us" className="py-24 px-4 bg-white relative overflow-hidden">
+            {/* Subtle background accents matching site theme */}
+            <div className="absolute -top-40 -right-40 w-80 h-80 bg-aethel-50 rounded-full blur-3xl opacity-50" />
+            <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-aethel-50 rounded-full blur-3xl opacity-50" />
+
+            <div className="relative z-10 w-full max-w-[1200px] mx-auto">
+                {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Why work with <span className="text-aethel-500">Aethel Labs?</span>
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        It's not just what we help you achieve, it is about how we will work with you
-                        to make your technology journey easy and your engagement fun and fulfilling.
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                        It's not just what we build – it's how we work with you to make your
+                        technology journey effortless and genuinely rewarding.
                     </p>
                 </div>
 
@@ -58,8 +79,16 @@ export const WhyWorkWithUsSection = () => {
                                 key={index}
                                 className="group bg-gray-50 hover:bg-white rounded-2xl p-8 border border-gray-100 hover:border-aethel-200 hover:shadow-xl transition-all duration-300"
                             >
-                                <div className="w-14 h-14 bg-aethel-500 group-hover:bg-aethel-600 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                                    <IconComponent className="w-7 h-7 text-white" />
+                                {/* Icon */}
+                                <div className="w-14 h-14 bg-aethel-500 group-hover:bg-aethel-600 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110">
+                                    <IconComponent className="w-7 h-7 text-white" strokeWidth={1.5} />
+                                </div>
+
+                                {/* Highlight tag */}
+                                <div className="inline-flex items-center px-3 py-1 bg-aethel-50 rounded-full mb-3">
+                                    <span className="text-xs font-semibold text-aethel-600 uppercase tracking-wider">
+                                        {benefit.highlight}
+                                    </span>
                                 </div>
 
                                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -72,6 +101,20 @@ export const WhyWorkWithUsSection = () => {
                             </div>
                         );
                     })}
+                </div>
+
+                {/* Bottom CTA */}
+                <div className="mt-16 text-center">
+                    <button
+                        onClick={() => {
+                            const element = document.getElementById("contact");
+                            if (element) element.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="inline-flex items-center gap-2 bg-aethel-500 hover:bg-aethel-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
+                    >
+                        Start Your Journey
+                        <ArrowRight className="w-5 h-5" />
+                    </button>
                 </div>
             </div>
         </section>
