@@ -1,4 +1,4 @@
-import { Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 const footerLinks = {
     expertise: [
@@ -32,9 +32,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-    { icon: Twitter, href: "https://twitter.com" },
-    { icon: Linkedin, href: "https://linkedin.com" },
-    { icon: Instagram, href: "https://github.com" },
+    { icon: Twitter, href: "https://X.com/Aethel_Labs" },
+    { icon: Linkedin, href: "https://linkedin.com/company/aethellabs" },
+    { icon: Instagram, href: "https://instagram.com/aethellabs" },
 ];
 
 export const Footer = () => {
