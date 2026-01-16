@@ -137,14 +137,14 @@ export const Navbar = () => {
 
                 {/* Right: Phone + CTA */}
                 <div className="flex items-center gap-3">
-                    {/* Phone Number - Hidden on mobile */}
+                    {/* Phone Number - Hidden on mobile
                     <a
                         href="tel:+1234567890"
                         className="hidden lg:flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         <Phone className="w-4 h-4" />
                         <span>Contact Us</span>
-                    </a>
+                    </a> */}
 
                     {/* CTA Button */}
                     <button

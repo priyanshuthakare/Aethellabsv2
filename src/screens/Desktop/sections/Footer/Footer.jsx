@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+=======
+import { Linkedin, Twitter, Instagram } from "lucide-react";
+>>>>>>> 8ee5f54 (Add display cards component with enhanced animations and styling)
 
 const footerLinks = {
     expertise: [
