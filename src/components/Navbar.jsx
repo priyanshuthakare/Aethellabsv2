@@ -133,6 +133,12 @@ export const Navbar = () => {
                     >
                         About
                     </button>
+                    <button
+                        onClick={() => handleScroll("faq")}
+                        className="px-4 py-2 rounded-full font-medium text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-all"
+                    >
+                        FAQ
+                    </button>
                 </div>
 
                 {/* Right: Phone + CTA */}

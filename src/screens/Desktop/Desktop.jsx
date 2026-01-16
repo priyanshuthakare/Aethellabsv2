@@ -6,6 +6,7 @@ import { JourneySection } from "./sections/JourneySection/JourneySection";
 import { WhyWorkWithUsSection } from "./sections/WhyWorkWithUsSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection/TestimonialsSection";
 import { SecuritySection } from "./sections/SecuritySection/SecuritySection";
+import { FAQSection } from "./sections/FAQSection/FAQSection";
 import { ContactUsSection } from "./sections/ContactUsSection";
 import { Footer } from "./sections/Footer/Footer";
 
@@ -27,6 +28,7 @@ export const Desktop = () => {
                 <WhyWorkWithUsSection />
                 <TestimonialsSection />
                 <SecuritySection />
+                <FAQSection />
                 <ContactUsSection />
             </main>
 

@@ -1,5 +1,7 @@
 import { Brain, ChevronRight, FileText, LayoutDashboard, Wrench, Zap } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useMousePositionRef } from "@/components/hooks/use-mouse-position-ref";
 
 const expertiseData = [
     {
@@ -73,6 +75,19 @@ export const ServicesSection = () => {
     const [activeTab, setActiveTab] = useState("automation");
     const activeExpertise = expertiseData.find(e => e.id === activeTab);
     const ActiveIcon = activeExpertise?.icon || Zap;
+
+    // Mouse position tracking
+    const containerRef = useRef(null);
+    const positionRef = useMousePositionRef(containerRef);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const updatePosition = () => {
+            setPosition({ ...positionRef.current });
+        };
+        const interval = setInterval(updatePosition, 16); // ~60fps
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section id="services" className="py-20 px-4 bg-gray-50">
@@ -151,13 +166,32 @@ export const ServicesSection = () => {
                         </div>
 
                         {/* Right: Visual */}
-                        <div className="bg-gradient-to-br from-aethel-50 to-aethel-100 p-8 lg:p-12 flex items-center justify-center min-h-[400px]">
+                        <div
+                            ref={containerRef}
+                            className="bg-gradient-to-br from-aethel-50 to-aethel-100 p-8 lg:p-12 flex items-center justify-center min-h-[400px] relative overflow-hidden"
+                        >
+                            {/* Dynamic gradient that follows mouse */}
+                            <motion.div
+                                className="absolute inset-0 pointer-events-none"
+                                style={{
+                                    background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(59, 130, 246, 0.2), transparent 50%)`,
+                                }}
+                                transition={{ type: "tween", duration: 0.075 }}
+                            />
+
                             <div className="relative w-full max-w-md">
                                 {/* Decorative elements */}
                                 <div className="absolute inset-0 bg-aethel-gradient rounded-3xl opacity-10 blur-2xl transform rotate-6" />
 
                                 {/* Main Visual */}
-                                <div className="relative bg-white rounded-2xl shadow-xl p-6">
+                                <motion.div
+                                    className="relative bg-white rounded-2xl shadow-xl p-6"
+                                    style={{
+                                        rotateY: (position.x - (containerRef.current?.clientWidth || 0) / 2) * 0.01,
+                                        rotateX: -(position.y - (containerRef.current?.clientHeight || 0) / 2) * 0.01,
+                                    }}
+                                    transition={{ type: "spring", damping: 20 }}
+                                >
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="w-10 h-10 bg-aethel-500 rounded-lg flex items-center justify-center">
                                             <ActiveIcon className="w-5 h-5 text-white" />
@@ -176,7 +210,12 @@ export const ServicesSection = () => {
                                                 <span className="font-semibold text-aethel-500">85%</span>
                                             </div>
                                             <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                                                <div className="h-full bg-aethel-500 rounded-full w-[85%]" />
+                                                <motion.div
+                                                    className="h-full bg-aethel-500 rounded-full"
+                                                    initial={{ width: 0 }}
+                                                    animate={{ width: "85%" }}
+                                                    transition={{ duration: 1, ease: "easeOut" }}
+                                                />
                                             </div>
                                         </div>
                                         <div>
@@ -185,7 +224,12 @@ export const ServicesSection = () => {
                                                 <span className="font-semibold text-aethel-500">72%</span>
                                             </div>
                                             <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                                                <div className="h-full bg-aethel-400 rounded-full w-[72%]" />
+                                                <motion.div
+                                                    className="h-full bg-aethel-400 rounded-full"
+                                                    initial={{ width: 0 }}
+                                                    animate={{ width: "72%" }}
+                                                    transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                                                />
                                             </div>
                                         </div>
                                         <div>
@@ -194,11 +238,16 @@ export const ServicesSection = () => {
                                                 <span className="font-semibold text-aethel-500">94%</span>
                                             </div>
                                             <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                                                <div className="h-full bg-aethel-300 rounded-full w-[94%]" />
+                                                <motion.div
+                                                    className="h-full bg-aethel-300 rounded-full"
+                                                    initial={{ width: 0 }}
+                                                    animate={{ width: "94%" }}
+                                                    transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                                                />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
