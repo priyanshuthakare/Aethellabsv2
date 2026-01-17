@@ -11,7 +11,6 @@ import {
     MessageSquare,
     Package,
     Receipt,
-    Sparkles,
     TrendingUp,
     UserPlus
 } from "lucide-react";
@@ -76,11 +75,10 @@ export const UseCasesSection = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Automation solutions{" "}
-                        <span className="text-aethel-500">for every workflow</span>
+                        <span className="text-aethel-500">designed around your workflows</span>
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        From operations to finance, we've built thousands of AI automation
-                        solutions for businesses like yours.
+                        From operations to finance, we design and implement AI-driven automations that reduce manual work, improve accuracy, and help teams operate with clarity.
                     </p>
                 </div>
 
@@ -119,8 +117,8 @@ export const UseCasesSection = () => {
                 {/* Bottom CTA */}
                 <div className="mt-12 text-center">
                     <div className="inline-flex items-center gap-3 bg-aethel-500 hover:bg-aethel-600 text-white font-semibold px-6 py-3 rounded-full transition-colors cursor-pointer">
-                        <Sparkles className="w-5 h-5" />
-                        <span>Don't see your use case? We can build it.</span>
+
+                        <span>Don’t see your use case? We design custom automation solutions.</span>
                     </div>
                 </div>
             </div>

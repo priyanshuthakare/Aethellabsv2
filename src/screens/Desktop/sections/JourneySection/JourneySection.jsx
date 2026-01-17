@@ -11,13 +11,13 @@ const journeySteps = [
         number: "01",
         timeline: "1-2 Weeks",
         title: "Discovery",
-        subtitle: "Understanding your needs",
-        description: "We dive deep into your business to understand challenges, goals, and processes. This phase sets the foundation for a solution that truly fits.",
+        subtitle: "Understanding your workflows",
+        description: "We begin by understanding how your business actually operates, not how it’s assumed to work. We study your existing processes, systems, and goals to identify where automation can create real leverage without disrupting day-to-day operations.",
         deliverables: [
-            "Process audit & documentation",
-            "Opportunity assessment",
-            "Technical requirements",
-            "Project roadmap"
+            "Workflow and process assessment",
+            "Identification of repetitive and high-impact tasks",
+            "Clear problem definition and scope",
+            "Alignment on automation opportunities"
         ]
     },
     {
@@ -25,13 +25,13 @@ const journeySteps = [
         number: "02",
         timeline: "1-2 Weeks",
         title: "Design",
-        subtitle: "Architecting the solution",
-        description: "We create detailed blueprints and prototypes ensuring your automation solution integrates seamlessly with existing operations.",
+        subtitle: "Architecting the right solution",
+        description: "Once the problem is clear, we design automation around outcomes, not tools. This phase focuses on creating a solution blueprint that fits seamlessly into your current setup while remaining scalable as your business grows.",
         deliverables: [
             "Solution architecture",
             "Workflow diagrams",
-            "Integration plan",
-            "Timeline & milestones"
+            "Integration planning",
+            "Clear milestones and delivery roadmap"
         ]
     },
     {
@@ -40,12 +40,12 @@ const journeySteps = [
         timeline: "2-4 Weeks",
         title: "Develop",
         subtitle: "Building with precision",
-        description: "Our team builds and configures your automation with precision, testing thoroughly at every stage to ensure reliability.",
+        description: "We build and configure the automation with a focus on reliability, performance, and maintainability. Every component is tested thoroughly to ensure it works as expected across real-world scenarios.",
         deliverables: [
-            "Custom automation build",
+            "Custom automation development",
             "System integrations",
-            "Quality assurance testing",
-            "Performance optimization"
+            "Quality assurance and testing",
+            "Performance tuning"
         ]
     },
     {
@@ -53,12 +53,12 @@ const journeySteps = [
         number: "04",
         timeline: "1 Week",
         title: "Deploy",
-        subtitle: "Launch & empower",
-        description: "We deploy your solution, train your team, and provide comprehensive documentation so everyone can leverage the new systems effectively.",
+        subtitle: "Launch & enable adoption",
+        description: "Deployment is not just about going live, it’s about making sure your team can use the system confidently. We ensure a smooth transition with clear documentation and guidance so automation becomes part of everyday operations.",
         deliverables: [
             "Production deployment",
-            "Team training sessions",
-            "Documentation & guides",
+            "Team walkthroughs and onboarding",
+            "Documentation & usage guides",
             "Handover support"
         ]
     },
@@ -67,13 +67,13 @@ const journeySteps = [
         number: "05",
         timeline: "Ongoing",
         title: "Support",
-        subtitle: "Forever partnership",
-        description: "We don't disappear after launch. Our team continuously monitors, optimizes, and supports your automation to keep pace with your evolving needs.",
+        subtitle: "Continuous improvement",
+        description: "Automation is not static. As your workflows evolve, systems need to adapt. We stay involved to monitor performance, optimize workflows, and ensure automation continues to deliver value over time.",
         deliverables: [
-            "24/7 monitoring",
+            "Ongoing monitoring",
             "Continuous optimization",
-            "Priority support",
-            "Regular reviews"
+            "Issue resolution and improvements",
+            "Long-term automation support"
         ]
     }
 ];
@@ -102,8 +102,7 @@ export const JourneySection = () => {
                         How We <span className="text-aethel-500">Work</span>
                     </h2>
                     <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        From initial discovery through to ongoing support – we guide you through
-                        every step of your AI automation journey with clarity and expertise.
+                        From initial discovery to ongoing support, we follow a structured, outcome-driven approach to ensure automation delivers clarity, reliability, and long-term value.
                     </p>
                 </div>
 
