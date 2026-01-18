@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
+import { useState } from "react";
 
 const faqData = [
     {
@@ -50,7 +50,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
                 <span className="text-lg font-semibold text-gray-900 group-hover:text-white pr-8 transition-colors">
                     {question}
                 </span>
-                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-aethel-500 group-hover:bg-white transition-all">
+                <span className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-aethel-500 group-hover:bg-white transition-all duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
                     {isOpen ? (
                         <Minus className="w-5 h-5 text-white group-hover:text-aethel-500 transition-colors" />
                     ) : (
@@ -58,11 +58,17 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
                     )}
                 </span>
             </button>
-            {isOpen && (
-                <div className="px-6 pb-6 text-gray-600 group-hover:text-gray-300 leading-relaxed animate-fade-in transition-colors">
-                    {answer}
+            {/* Smooth height animation using grid-rows */}
+            <div
+                className="grid transition-all duration-300 ease-out"
+                style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+            >
+                <div className="overflow-hidden">
+                    <div className={`px-6 pb-6 text-gray-600 group-hover:text-gray-300 leading-relaxed transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
+                        {answer}
+                    </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };

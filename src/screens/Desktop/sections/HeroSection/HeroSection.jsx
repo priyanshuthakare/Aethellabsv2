@@ -1,47 +1,45 @@
-import React from "react";
+import {
+    CheckCircle2,
+    ChevronRight,
+    Clock,
+    Layers,
+    Users
+} from "lucide-react";
 import { Navbar } from "../../../../components/Navbar";
 import { AethelHeroCards } from "../../../../components/ui/aethel-hero-cards";
-import {
-    ChevronRight,
-    Sparkles,
-    Check,
-    ArrowRight,
-    Users,
-    Star,
-    Shield,
-    Zap,
-    TrendingUp,
-    Clock,
-    CheckCircle2,
-    Play
-} from "lucide-react";
 
-// Animated Background Orbs
+/**
+ * @intent Optimized background decoration with reduced GPU load
+ * @description Static orbs with reduced blur for better performance
+ */
 const BackgroundOrbs = () => (
     <>
-        {/* Large floating orbs */}
-        <div className="absolute -left-40 top-1/3 w-[500px] h-[500px] bg-aethel-400/30 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute -right-32 top-1/4 w-[400px] h-[400px] bg-purple-500/20 rounded-full blur-[100px] animate-pulse animation-delay-500" />
-        <div className="absolute left-1/3 -bottom-20 w-[300px] h-[300px] bg-aethel-500/20 rounded-full blur-[80px] animate-pulse animation-delay-1000" />
-
-        {/* Subtle grid pattern overlay */}
+        {/* Optimized floating orbs - reduced blur, no animation */}
         <div
-            className="absolute inset-0 opacity-[0.03]"
-            style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-                backgroundSize: '40px 40px'
-            }}
+            className="absolute -left-40 top-1/3 w-[500px] h-[500px] bg-aethel-400/25 rounded-full blur-[60px] opacity-80"
+            style={{ willChange: 'transform' }}
+        />
+        <div
+            className="absolute -right-32 top-1/4 w-[400px] h-[400px] bg-purple-500/15 rounded-full blur-[50px] opacity-80"
+            style={{ willChange: 'transform' }}
+        />
+        <div
+            className="absolute left-1/3 -bottom-20 w-[300px] h-[300px] bg-aethel-500/15 rounded-full blur-[40px] opacity-80"
+            style={{ willChange: 'transform' }}
         />
     </>
 );
 
-// Avatar Stack Component with hover effect
+/**
+ * @intent Avatar stack with social proof
+ * @description Lazy-loaded images with optimized rendering
+ */
 const AvatarStack = () => {
     const avatars = [
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face&q=60",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face&q=60",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face&q=60",
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face&q=60",
     ];
 
     return (
@@ -51,6 +49,8 @@ const AvatarStack = () => {
                     key={i}
                     src={avatar}
                     alt={`Team member ${i + 1}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-10 h-10 rounded-full border-[3px] border-white object-cover shadow-lg hover:scale-110 hover:z-10 transition-transform duration-200"
                 />
             ))}
@@ -94,7 +94,7 @@ export const HeroSection = () => {
             <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 pt-32 pb-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-200px)]">
                     {/* Left: Text Content */}
-                    <div className="flex flex-col gap-8">
+                    <div className="flex flex-col gap-5">
                         {/* Badge */}
                         {/* <div className="flex items-center gap-3">
                             <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md text-white rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors cursor-pointer group">
@@ -107,35 +107,33 @@ export const HeroSection = () => {
 
                         {/* Main Heading with gradient */}
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
-                            <span className="text-white">AI &</span><br />
+                            <span className="text-white">AI Systems</span><br />
                             <span className="bg-gradient-to-r from-white via-aethel-200 to-white bg-clip-text text-transparent">
-                                Automation,
+                                Designed
                             </span><br />
-                            <span className="text-white">Made Easy</span>
+                            <span className="text-white">For Real Workflows</span>
                         </h1>
 
                         {/* Subheading */}
                         <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-lg">
-                            Unlock efficient growth and operational excellence in your technical
-                            services business with expertly delivered software integration, AI
-                            automation, and nocode development solutions.
+                            We design and implement AI systems that remove repetitive work, reduce operational friction, and scale with your existing workflows, without disrupting how your team operates.
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button
-                                onClick={() => handleScroll("contact")}
+                                onClick={() => window.open("https://cal.com/aethellabs/discovery", "_blank")}
                                 className="group inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-navy-900 font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02]"
                             >
-                                Contact us
+                                Book a Discovery Call
                                 <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                             </button>
                             <button
-                                onClick={() => window.open("https://cal.com/aethellabs/discovery", "_blank")}
+                                onClick={() => handleScroll("services")}
                                 className="group inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 border border-white/30 hover:border-white/50"
                             >
-                                {/* <Sparkles className="w-5 h-5" /> */}
-                                Book a consultancy
+                                Explore Services
+                                <Layers className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                             </button>
                         </div>
 
