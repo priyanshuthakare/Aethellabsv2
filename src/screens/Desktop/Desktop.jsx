@@ -1,14 +1,13 @@
-import React from "react";
 import { HeroSection } from "./sections/HeroSection";
-import { UseCasesSection } from "./sections/UseCasesSection/UseCasesSection";
-import { ServicesSection } from "./sections/ServicesSection";
 import { JourneySection } from "./sections/JourneySection/JourneySection";
+import { ServicesSection } from "./sections/ServicesSection";
+import { UseCasesSection } from "./sections/UseCasesSection/UseCasesSection";
 import { WhyWorkWithUsSection } from "./sections/WhyWorkWithUsSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection/TestimonialsSection";
-import { SecuritySection } from "./sections/SecuritySection/SecuritySection";
-import { FAQSection } from "./sections/FAQSection/FAQSection";
+// import { TestimonialsSection } from "./sections/TestimonialsSection/TestimonialsSection";
 import { ContactUsSection } from "./sections/ContactUsSection";
+import { FAQSection } from "./sections/FAQSection/FAQSection";
 import { Footer } from "./sections/Footer/Footer";
+import { SecuritySection } from "./sections/SecuritySection/SecuritySection";
 
 export const Desktop = () => {
     return (
@@ -26,7 +25,7 @@ export const Desktop = () => {
                 <ServicesSection />
                 <JourneySection />
                 <WhyWorkWithUsSection />
-                <TestimonialsSection />
+                {/* <TestimonialsSection /> */}
                 <SecuritySection />
                 <FAQSection />
                 <ContactUsSection />

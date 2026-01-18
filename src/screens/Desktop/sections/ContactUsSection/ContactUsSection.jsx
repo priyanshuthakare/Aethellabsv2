@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import { Mail, ArrowRight, CheckCircle, ChevronRight, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
+import { useRef, useState } from "react";
 
 export const ContactUsSection = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -59,17 +59,16 @@ export const ContactUsSection = () => {
 
                     <div className="relative z-10">
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                            Make your AI automation<br />journey easy
+                            Let’s bring clarity to your<br /> workflows
                         </h2>
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-                            Join more than <span className="font-bold text-white">975+ businesses</span> that have enjoyed
-                            working with a capable and trustworthy partner.
+                            If you’re exploring <span className="font-bold text-white">AI Automation,</span> the right place to start isn’t tools, it’s understanding where automation actually makes sense in your business.
                         </p>
                         <button
                             onClick={() => window.open("https://cal.com/aethellabs/discovery", "_blank")}
                             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-navy-900 font-semibold text-lg px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
                         >
-                            Speak with our team
+                            Start with a workflow review
                             <ChevronRight className="w-5 h-5" />
                         </button>
                     </div>
