@@ -1,0 +1,82 @@
+﻿C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\components.json
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\CONTACT_FORM_SETUP.md
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\FRONTEND_EMAIL_SETUP.md
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\package-LAPTOP-N5Q5SS92.json
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\package-lock-LAPTOP-N5Q5SS92.json
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\README.md
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\arrow_forward_ios.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Desktop.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Digen_video_1762457742937.mp4
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 3.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 4.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 5.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 6.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 7.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\Ellipse 8.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\footer.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\image 46.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\image 47.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\image 48.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\image 49.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\image 54.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\services.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\assets\source\image.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\aethel-logo.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\arrow-forward-ios.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\auth-bg-final.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\auth-bg.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\auth-left-bg.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\auth-logo-white.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\auth-side.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\Ellipse 3.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\Ellipse 4.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\footer.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\hero.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image 46.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image 47.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image 48.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image 49.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image 54.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-45.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-46.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-50.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-51.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-52.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-53.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\image-54.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\index-LAPTOP-N5Q5SS92.html
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\line-1.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\logo-new.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\profile-icon.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\services.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\footer.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\hero-bg-B-cVHKjp.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\index-CXrLFnMP.css
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\index-D1azg1Td.css
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\index-DnYF3Ney.js
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\index-DyLJddgp.js
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\dist\assets\weblogo-FADEDJR5.jpeg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\aethel-logo.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\arrow-forward-ios.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\auth-bg-final.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\auth-bg.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\auth-side.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\Ellipse 3.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\Ellipse 4.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\footer.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\hero.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image 46.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image 47.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image 48.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image 49.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image 54.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-46.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-50.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-51.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-52.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-53.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\image-54.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\line-1.svg
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\logo-new.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\services.png
+C:\Users\Prarbdha\OneDrive\Desktop\aethellabs\Aethellabsv2\public\assets\footer.svg

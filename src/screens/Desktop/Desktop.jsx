@@ -1,5 +1,5 @@
 import { HeroSection } from "./sections/HeroSection";
-import { JourneySection } from "./sections/JourneySection/JourneySection";
+import { ProcessSection } from "@/components/process-section-gsap-final";
 import { ServicesSection } from "./sections/ServicesSection";
 import { UseCasesSection } from "./sections/UseCasesSection/UseCasesSection";
 import { WhyWorkWithUsSection } from "./sections/WhyWorkWithUsSection";
@@ -23,7 +23,7 @@ export const Desktop = () => {
                 <HeroSection />
                 <UseCasesSection />
                 <ServicesSection />
-                <JourneySection />
+                <ProcessSection />
                 <WhyWorkWithUsSection />
                 {/* <TestimonialsSection /> */}
                 <SecuritySection />

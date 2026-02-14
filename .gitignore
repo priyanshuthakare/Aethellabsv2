@@ -1,3 +1,22 @@
 node_modules
 node_modules
 node_modules
+node_modules
+
+public/Ellipse 3.svg
+public/Ellipse 4.svg
+
+CONTACT_FORM_SETUP.md
+FRONTEND_EMAIL_SETUP.md
+
+README.md
+public/footer.svg
+
+# Corrupted/OneDrive Sync Issues
+dist/
+public/
+assets/
+components.json
+*_SETUP.md
+package-LAPTOP*
+package-lock-LAPTOP*

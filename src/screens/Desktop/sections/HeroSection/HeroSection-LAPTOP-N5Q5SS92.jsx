@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { Navbar } from "../../../../components/Navbar";
 import { AethelHeroCards } from "../../../../components/ui/aethel-hero-cards";
+import heroBg from "../../../../assets/hero-bg.png";
 
 /**
  * @intent Optimized background decoration with reduced GPU load
@@ -14,6 +15,7 @@ import { AethelHeroCards } from "../../../../components/ui/aethel-hero-cards";
  */
 const BackgroundOrbs = () => (
     <>
+
         {/* Optimized floating orbs - reduced blur, no animation */}
         <div
             className="absolute -left-40 top-1/3 w-[500px] h-[500px] bg-aethel-400/25 rounded-full blur-[60px] opacity-80"
@@ -83,7 +85,7 @@ export const HeroSection = () => {
     };
 
     return (
-        <section id="hero-section" className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero-bg-gradient.png')" }}>
+        <section id="hero-section" className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }}>
             {/* Navbar */}
             <Navbar />
 

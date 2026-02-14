@@ -10,26 +10,12 @@ import { useCart } from "../context/CartContext";
 export const Navbar = () => {
     const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isProfileOpen, setIsProfileOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn") === "true");
+    const [isLoggedIn, setIsLoggedIn] = useState(true); // Simulated login state
     const dropdownRef = useRef(null);
     const profileRef = useRef(null);
-    const { cartItems } = useCart();
-
-    // Listen for storage events to update state across tabs/components
-    useEffect(() => {
-        const handleStorageChange = () => {
-            setIsLoggedIn(localStorage.getItem("isLoggedIn") === "true");
-        };
-        window.addEventListener("storage", handleStorageChange);
-        // Custom event for same-tab updates
-        window.addEventListener("auth-change", handleStorageChange);
-        return () => {
-            window.removeEventListener("storage", handleStorageChange);
-            window.removeEventListener("auth-change", handleStorageChange);
-        };
-    }, []);
     const location = useLocation();
     const navigate = useNavigate();
+    const { cartItems } = useCart();
 
     const handleScroll = (id) => {
         if (location.pathname !== "/") {
@@ -183,7 +169,7 @@ export const Navbar = () => {
                                     >
                                         <ShoppingCart size={18} />
                                         My Cart
-                                        {cartItems && cartItems.length > 0 && (
+                                        {cartItems.length > 0 && (
                                             <span className="ml-auto bg-aethel-100 text-aethel-700 text-xs font-bold px-2 py-0.5 rounded-full">{cartItems.length}</span>
                                         )}
                                     </Link>
@@ -192,8 +178,7 @@ export const Navbar = () => {
                                         <button
                                             className="w-full text-left flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors"
                                             onClick={() => {
-                                                localStorage.setItem("isLoggedIn", "false");
-                                                window.dispatchEvent(new Event("auth-change"));
+                                                setIsLoggedIn(false);
                                                 setIsProfileOpen(false);
                                             }}
                                         >

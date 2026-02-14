@@ -149,6 +149,12 @@ module.exports = {
                 'scale-in': {
                     from: { opacity: '0', transform: 'scale(0.95)' },
                     to: { opacity: '1', transform: 'scale(1)' }
+                },
+                'blob': {
+                    '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                    '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                    '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                    '100%': { transform: 'translate(0px, 0px) scale(1)' }
                 }
             },
             animation: {
@@ -160,6 +166,7 @@ module.exports = {
                 'float': 'float 6s ease-in-out infinite',
                 'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
                 'scale-in': 'scale-in 0.3s ease-out forwards',
+                'blob': 'blob 7s infinite',
             },
             backgroundImage: {
                 'aethel-gradient': 'linear-gradient(135deg, #472FFF 0%, #040959 100%)',

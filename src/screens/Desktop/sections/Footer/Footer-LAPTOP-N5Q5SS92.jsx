@@ -26,8 +26,8 @@ const footerLinks = {
     ],
     company: [
         { label: "Products", href: "/products" },
-        { label: "Our Work", href: "journey" },
-        { label: "About Aethel Labs", href: "hero-section" },
+        { label: "Our Work", href: "journey" }, // Changed to ID without # for consistency with Navbar logic if needed, but keeping # for now and handling it
+        { label: "About Aethel Labs", href: "hero-section" }, // redirect to top
         { label: "Contact", href: "contact" },
     ]
 };
